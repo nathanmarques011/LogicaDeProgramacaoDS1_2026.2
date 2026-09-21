@@ -13,3 +13,20 @@ Imprima "Isento" ou o valor total do imposto formatado com 2 casas decimais.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+salario = float(input("Digite seu salário em R$"))
+taxa1 = 0.08
+taxa2 = 0.18
+taxa3 = 0.28
+
+if salario <= 2000 :
+     print("isento")
+elif salario > 2000 :
+     taxa = salario * taxa1
+elif salario > 3000 :
+     excedente = salario - 3000
+     taxa = (excedente * taxa2) + salario * taxa1
+elif salario > 4500 :
+     excedente = salario - 4500
+     taxa = (excedente * taxa3) + salario * taxa2 + salario + taxa3
+salario_real = salario + taxa
+print(f"O seu salário com as devidas taxas aplicadas é de {salario_real: .2f}")
