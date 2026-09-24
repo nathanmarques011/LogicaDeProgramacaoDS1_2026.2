@@ -14,3 +14,22 @@ Imprima: novo salário, valor do reajuste ganho e percentual aplicado.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+salario = float(input("Digite seu salario"))
+reajuste1 = 0.15
+reajuste2 = 0.12
+reajuste3 = 0.10
+reajuste4 = 0.07
+reajuste5 = 0.04
+
+if salario <= 400 :
+    salario_reajustado = salario * reajuste1 + salario
+elif salario > 400 :
+    salario_reajustado = salario * reajuste2 + salario
+elif salario > 800 :
+    salario_reajustado = salario * reajuste3 + salario
+elif salario > 1200 :
+    salario_reajustado = salario * reajuste4 + salario
+elif salario > 2000 :
+    salario_reajustado = salario * reajuste5 + salario
+
+print("O valor do seu salário reajustado é de", salario_reajustado)
