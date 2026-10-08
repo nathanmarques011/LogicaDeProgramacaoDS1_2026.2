@@ -9,3 +9,13 @@ Ao acertar, imprima "Acesso Permitido" e finalize o programa.
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+senha_laboratorio = "2002"
+
+while True :
+    tentativa = input("Digite a senha do laboratótio : ")
+    if tentativa == senha_laboratorio :
+        print("Acesso Permitido")
+        break
+    else :
+        print ("Acesso negado")
+        continue

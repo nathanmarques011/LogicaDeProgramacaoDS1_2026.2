@@ -9,3 +9,5 @@ da palavra natal exatamente I vezes (ex: I=5 -> "Feliz nataaaal!").
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+letras = int(input("Digite seu nivel de empolgação em numeros"))
+
