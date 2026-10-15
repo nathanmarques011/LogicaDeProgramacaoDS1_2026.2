@@ -12,3 +12,19 @@ SUA MISSÃO:
 """
 
 # TODO: Desenvolva as funções modulares abaixo:
+
+def calcular_preco_final(preco_base, taxa_desc, taxa_imp):
+    desconto = preco_base * (taxa_desc / 100)
+    imposto = preco_base * (taxa_imp / 100)
+    preco_final = preco_base - desconto + imposto
+    return preco_final
+
+
+def exibir_relatorio_item(numero_item, preco_final):
+    print(f"Item {numero_item}: R$ {preco_final:.2f}")
+
+preco = calcular_preco_final(100, 10, 5)
+exibir_relatorio_item(1, preco)
+
+preco = calcular_preco_final(200, 15, 8)
+exibir_relatorio_item(2, preco)
