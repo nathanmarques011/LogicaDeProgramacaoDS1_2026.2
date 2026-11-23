@@ -10,3 +10,9 @@ ENUNCIADO:
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+monitor = [ ]
+for i in range (2):
+    novo_nome = str(input("Digite um novo nome: "))
+    monitor.append(novo_nome)
+monitor.append("Ryan Mesquita Damasceno")
+print(monitor)
