@@ -12,3 +12,20 @@ SUA MISSÃO:
 """
 
 # TODO: Desenvolva o algoritmo abaixo:
+itens = ["Mouse", "Teclado", "Monitor", "Mouse", "Teclado", "CPU"]
+
+itens_unicos = set(itens)
+
+print("Itens únicos:", itens_unicos)
+
+inventario = {
+    "Mouse": 10,
+    "Teclado": 5,
+    "Monitor": 3
+}
+
+item = input("Digite o item que deseja consultar: ")
+
+quantidade = inventario.get(item, "Item não encontrado")
+
+print("Resultado:", quantidade)
